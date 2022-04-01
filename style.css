@@ -1,7 +1,9 @@
 * {
    box-sizing: border-box;
 }
-
+:root {
+   --width: 400px;
+}
 body {
    background: #20221f;
    min-height: 100vh;
@@ -50,7 +52,7 @@ body {
    position: absolute;
    width: inherit;
    height: inherit;
-   border: 5px solid #fff;
+   border: 1px solid #fff;
    font: normal 70px Arial;
    text-align: center;
    line-height: 300px;
@@ -62,29 +64,29 @@ img {
 }
 .cube1 {
    background-color: red;
-   transform: translateZ(400px);
+   transform: translateZ(var(--width));
 }
 
 .cube2 {
    background-color: rgb(115, 255, 0);
-   transform: rotateY(180deg) translateZ(400px) rotateX(180deg);
+   transform: rotateY(180deg) translateZ(var(--width)) rotateX(180deg);
 }
 
 .cube3 {
    background-color: rgb(17, 0, 255);
-   transform: rotateY(90deg) translateZ(400px);
+   transform: rotateY(90deg) translateZ(var(--width));
 }
 .cube4 {
    background-color: rgb(208, 255, 0);
-   transform: rotateY(-90deg) translateZ(400px);
+   transform: rotateY(-90deg) translateZ(var(--width));
 }
 .cube5 {
    background-color: rgb(183, 0, 255);
-   transform: rotateX(90deg) translateZ(400px);
+   transform: rotateX(90deg) translateZ(var(--width));
 }
 .cube6 {
    background-color: rgb(0, 238, 255);
-   transform: rotateX(-90deg) translateZ(400px) rotateY(180deg);
+   transform: rotateX(-90deg) translateZ(var(--width)) rotateY(180deg);
 }
 
 .container1 {
@@ -93,4 +95,16 @@ img {
    width: 800px;
    height: 800px;
    perspective: 1000px;
+}
+
+@media screen and (max-width: 380px) {
+   .container {
+      margin: 20px auto;
+      width: 200px;
+      height: 200px;
+      perspective: 550px;
+   }
+   :root {
+      --width: 100px;
+   }
 }
