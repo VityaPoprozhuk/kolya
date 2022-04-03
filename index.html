@@ -5,36 +5,40 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="./style.css">
-     <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+     <title>Slider</title>
 </head>
 
 <body>
-
-     <div class="container">
-          <div class="cube">
-               <div class="side cube1"><img src="./img/1.jpg" alt=""></div>
-               <div class="side cube2"><img src="./img/2.jpg" alt=""></div>
-               <div class="side cube3"><img src="./img/3.jpg" alt=""></div>
-               <div class="side cube4"><img src="./img/4.jpg" alt=""></div>
-               <div class="side cube5"><img src="./img/5.jpg" alt=""></div>
-               <div class="side cube6"><img src="./img/6.jpg" alt=""></div>
+     <ul class="hover-slider-nav">
+          <li class="hover-slider-nav__item">Boston</li>
+          <li class="hover-slider-nav__item">Los Angeles</li>
+          <li class="hover-slider-nav__item">New York</li>
+          <li class="hover-slider-nav__item">San Francisco</li>
+          <li class="hover-slider-nav__item">Texas</li>
+     </ul>
 
 
-          </div>
+     <ul class="hover-slider">
+          <li class="hover-slider__item">
+               <img class="hover-slider__item-img" src="./img/boston.jpg" alt="">
+          </li>
+          <li class="hover-slider__item">
+               <img class="hover-slider__item-img" src="./img/losAngeles.jpg" alt="">
+          </li>
+          <li class="hover-slider__item">
+               <img class="hover-slider__item-img" src="./img/newYork.jpg" alt="">
+          </li>
+          <li class="hover-slider__item">
+               <img class="hover-slider__item-img" src="./img/sFra.jpg" alt="">
+          </li>
+          <li class="hover-slider__item">
+               <img class="hover-slider__item-img" src="./img/texas.jpg" alt="">
+          </li>
+     </ul>
 
-     </div>
 
-     <!-- <div class="container1">
-          <div class="cube1">
-
-               <img src="./1.jpg" alt="" class="first">
-               <img src="./2.jpg" alt="" class="two">
-          </div>
-
-     </div>
-     </div> -->
-
+     <script src="app.js"></script>
 </body>
 
 </html>
